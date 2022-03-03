@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rented_Qty__c</fullName>
+    <externalId>false</externalId>
+    <label>Rented Qty</label>
+    <summaryFilterItems>
+        <field>Inventory__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Rented</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Inventory__c.Movie__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>
